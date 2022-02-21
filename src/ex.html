@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <title>Document</title>
+
+    <style>
+        .card {
+            background-color: rgb(73, 73, 73);
+            height: 400px;
+            box-shadow: 2px 2px 5px black;
+            border-radius: 10px;
+        }
+
+        .user {
+            line-height: 17px;
+        }
+
+        img {
+            height: 130px;
+            width: 130px;
+            margin: -40% 0 0 30%;
+            border-radius: 50%;
+            background-color: rgb(73, 73, 73);;
+            border: 4px solid #fd3838;
+        }
+
+        .u {
+            color: #fd3838;
+            font-weight: 700;
+        }
+
+        .detail {
+            text-align: center;
+            border-bottom: 1px solid #fd3838;
+        }
+
+        .tech {
+            border-right: 1px solid #fd3838;
+        }
+
+        /* .tech2{
+            tranken list
+        } */
+
+        li {
+            margin-top: 5px;
+        }
+
+        body {
+            background-color: #272726;
+            /* background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%); */
+            min-height: 100vh;
+            font-family: 'Fira Sans', sans-serif;
+            display: flex;
+        }
+
+        .btn {
+            background-color: #fd3838;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">addsfdsfds</div>
+            <div class="col-3 card mt-5 mb-4">
+                <div class="user text-white mt-5">
+                    <div class="pic">
+                        <img src="icon.png" alt="">
+                    </div>
+                    <div class="detail">
+                        <h2 class="u">User name</h2>
+                        <p>Developer</p>
+                        <p class="mt-3">Email : Example@gmail.com</p>
+                        <p>Mobile : 231232121</p>
+                        <p>Experience : 12</p>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col tech">
+                            <p>Technology</p>
+                            <ul class="tech2">
+                                <li>python</li>
+                                <li>django</li>
+                                <li>DRF</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <p>Projects</p>
+                            <ul>
+                                <li>project1</li>
+                                <li>project2</li>
+                                <li>project3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-3">
+                <button class="btn btn-sm text-white">All Members</button>
+                <button class="btn btn-sm text-white" style="margin-left: 10px;">Previous</button>
+                <button class="btn btn-sm text-white" style="margin-left: 10px;">Next</button>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

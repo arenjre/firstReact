@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import Greet from './componants/Greet';
+import PassData from './PassData'
+import User from './componants/User'
+import UserForm from './componants/UserForm'
 ReactDOM.render(
-  <React.StrictMode>
+  <div>
     <App />
-  </React.StrictMode>,
+  </div>,
   document.getElementById('root')
 );
 
