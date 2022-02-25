@@ -1,16 +1,18 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Greet from './componants/Greet';
-import PassData from './PassData'
-import User from './componants/User'
-import UserForm from './componants/UserForm'
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+
+
 ReactDOM.render(
-  <div>
+
+  <BrowserRouter>
     <App />
-  </div>,
+  </BrowserRouter>,
+
   document.getElementById('root')
 );
 

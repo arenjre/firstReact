@@ -1,6 +1,7 @@
 import React from "react";
-import "./Props.css"
-let Props = (props) => {
+import "./css/Props.css"
+let Props = (
+    props) => {
 
     return(
         <div className="container mt-5">

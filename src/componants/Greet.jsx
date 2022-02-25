@@ -1,7 +1,7 @@
 // this is example of state hook using useState
 
 import React, { useState } from "react";
-import './Greet.css'
+import './css/Greet.css'
 
 let greet = "";
 let greett = ""
@@ -27,15 +27,15 @@ let Greet = () => {
 
     return (
         <>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
+            <div className="container">
+                <div className="row">
+                    <div className="col text-white">
                         Column
                     </div>
-                    <div class="col">
+                    <div className="col text-white">
                         Column
                     </div>
-                    <div class="col">
+                    <div className="col text-white">
                         Column
                     </div>
                 </div>

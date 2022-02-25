@@ -1,3 +1,25 @@
+$('.myButton').on('click', function(e) {
+
+    e.preventDefault();
+
+    var href = $(this).attr('href'),
+        queryString = 'mySessionVar='+sessionStorage.getItem("myItem"),
+        newHref;
+
+    if (href.indexOf('?') !== -1) {
+
+        newHref = href + '&' + queryString;
+
+    } else {
+
+        newHref = href + '?' + queryString;
+    }
+
+    window.location.href = newHref;
+});
+========================================
+
+
 import React, { useState } from "react";
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
@@ -60,11 +82,11 @@ let UserForm = (props) => {
         setEmail("")
         setPassword("")
         
-        // axios({
-        //     method: 'post',
-        //     url: `http://127.0.0.1:8006/server/caffer/user/`,
-        //     data: usr
-        // });
+        axios({
+            method: 'post',
+            url: `http://127.0.0.1:8006/server/caffer/user/`,
+            data: usr
+        });
     }
 
     const params = useParams()
